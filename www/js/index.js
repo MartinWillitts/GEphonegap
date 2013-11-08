@@ -57,7 +57,7 @@ alert("rd");
 
 alert("re");
 
-        window.location = "index2.html";
+        //window.location = "index2.html";
 alert("rf");
 
         console.log('Received Event: ' + id);
