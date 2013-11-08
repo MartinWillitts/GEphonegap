@@ -50,7 +50,6 @@ alert("rd");
 
                                       try {
                                       alert('Device is ready!');
-                                      FB.init({ appId: "411705048880728", nativeInterface: CDV.FB, useCachedDialogs: false });
                                       } catch (e) {
                                       alert(e);
                                       }
