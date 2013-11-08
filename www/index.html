@@ -26,32 +26,6 @@
         <title>Hello World MW</title>
     </head>
     <body>
-
-        <div id="fb-root"></div>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script src="cdv-plugin-fb-connect.js"></script>
-        <script src="facebook-js-sdk.js"></script>
-        <script>
-alert("aa");
-            if ((typeof cordova == 'undefined') && (typeof Cordova == 'undefined')) alert('Cordova variable does not exist. Check that you have included cordova.js correctly');
-            if (typeof CDV == 'undefined') alert('CDV variable does not exist. Check that you have included cdv-plugin-fb-connect.js correctly');
-            if (typeof FB == 'undefined') alert('FB variable does not exist. Check that you have included the Facebook JS SDK file.');
-alert("ab");
-            function getLoginStatus() {
-alert("cc");
-                FB.getLoginStatus(function(response) {
-                                  if (response.status == 'connected') {
-                                  alert('logged in');
-                                  } else {
-                                  alert('not logged in');
-                                  }
-                                  });
-            }
-alert("ac");
-
-        </script>
- 
-
         <div class="app">
             <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
@@ -59,6 +33,7 @@ alert("ac");
                 <p class="event received">Device is Ready</p>
             </div>
         </div>
+        <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
