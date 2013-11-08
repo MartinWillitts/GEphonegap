@@ -47,8 +47,18 @@ alert("rc");
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 alert("rd");
-        window.location = "index2.html";
+
+                                      try {
+                                      alert('Device is ready!');
+                                      FB.init({ appId: "411705048880728", nativeInterface: CDV.FB, useCachedDialogs: false });
+                                      } catch (e) {
+                                      alert(e);
+                                      }
+
 alert("re");
+
+        window.location = "index2.html";
+alert("rf");
 
         console.log('Received Event: ' + id);
     }
