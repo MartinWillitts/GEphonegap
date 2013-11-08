@@ -27,6 +27,7 @@
 
         <script>
 (function(global) {
+alert("a");
     var head = global.document.head,
         Ext = global.Ext;
 
@@ -47,6 +48,7 @@
     }
 
     Ext.blink = function(options) {
+alert("b");
         var scripts = options.js || [],
             styleSheets = options.css || [],
             i, ln, path, platform, theme;
@@ -108,11 +110,12 @@
                 params[tmpArray[0]] = tmpArray[1];
             }
 
+alert("c " + params.platform);
             testPlatform = params.platform;
             if (testPlatform) {
                 return platform.indexOf(testPlatform) != -1;
             }
-
+alert("d");
             for (j = 0, jln = platform.length; j < jln; j++) {
                 switch (platform[j]) {
                     case 'phone':
@@ -155,6 +158,7 @@
                     return true;
                 }
             }
+alert("e");
             return false;
         };
 
@@ -179,6 +183,7 @@
             write('<link rel="stylesheet" href="'+path+'">');
         }
 
+alert("f");
         for (i = 0,ln = scripts.length; i < ln; i++) {
             path = scripts[i];
 
@@ -195,6 +200,7 @@
             }
 
             write('<script src="'+path+'"></'+'script>');
+alert("g");
         }
     }
 
